@@ -1,0 +1,50 @@
+package com.edu.encapsulation;
+
+import java.util.Scanner;
+
+class Employee{
+	String name;
+	int age;
+	float salary;
+	char gen;
+	
+	void inputData() {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter the name");
+		//name=scanner.next();//string single word
+		name=scanner.nextLine();//with space more than one word
+		
+		System.out.println("enter age");
+		age=scanner.nextInt(); //int datatype
+
+		System.out.println("enter Salary");
+		salary=scanner.nextFloat();
+		
+		System.out.println("enter gender(M/F)");
+		gen=scanner.next().charAt(0);//read char
+
+	}
+	
+	void displayData() {
+		System.out.println("Employee details ");
+		System.out.println("Name="+name);
+		System.out.println("Age="+age);
+		System.out.println("Salary="+salary);
+		System.out.println("Gender="+gen);
+	}}
+
+
+public class MainAppEncapsulation {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Main Method");
+		// TODO Auto-generated method stub
+		//create an object
+		Employee employee=new Employee();
+		employee.inputData();//call the method inputdata()
+		employee.displayData();
+
+	}
+
+}
