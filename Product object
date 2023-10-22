@@ -1,0 +1,59 @@
+package com.edu;
+
+import java.util.Scanner;
+
+class Product{
+	int pid;
+	String pname;
+	float pprice;
+	static String cname="info";
+	
+	void inputProduct() {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter the pname");
+		pname=scanner.nextLine();
+		
+		System.out.println("enter the pid");
+		pid=scanner.nextInt();
+		
+		
+		System.out.println("enter the pprice");
+		pprice=scanner.nextFloat();
+		
+		}
+	
+	void displayProduct(){
+		System.out.println("id="+this.pid); 
+		System.out.println("name="+this.pname);
+		System.out.println("price="+this.pprice);
+		System.out.println("company name"+this.cname);
+	}
+}
+public class MainProduct {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Product product1=new Product();
+		product1.inputProduct();
+		product1.displayProduct();
+		
+		Product product2=new Product();
+		product2.inputProduct();
+		product2.displayProduct();
+		
+		Product product3=new Product();
+		product3.inputProduct();
+		product3.displayProduct();
+		
+		Product product4=new Product();
+		product4.inputProduct();
+		product4.displayProduct();
+		
+		Product product5=new Product();
+		product5.inputProduct();
+		product5.displayProduct();
+			
+	
+	}
+
+}
