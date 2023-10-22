@@ -1,0 +1,38 @@
+package com.edu.operator;
+
+import java.util.Scanner;
+
+class check{
+	int num;
+	void inputData() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter number");
+		num=sc.nextInt();
+		
+		
+	}
+	void displayResult() {
+		if(num==0) {
+			System.out.println("neither zero is positive or negative");
+		}else {
+		if(num%2==0) {
+			System.out.println("no is even");
+		}else {
+			System.out.println("no is odd");
+	}
+}
+	}
+}
+
+public class EvenorOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		check c=new check();
+		c.inputData();
+		c.displayResult();
+			
+	}
+
+}
+
